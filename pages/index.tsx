@@ -53,36 +53,28 @@ export default function Home() {
       alt: "Deliverize Restaurant",
       title: "Deliverize Restaurant",
       key: 1,
+      url: "https://github.com/Thiagomn1/Deliverize",
     },
     {
-      src: "/web1.png",
+      src: "/web2.png",
       alt: "Portfolio project 2",
-      title: "Deliverize Homepage",
+      title: "Teste do Sofá",
       key: 2,
+      url: "https://github.com/Thiagomn1/AvaliaSofa",
     },
     {
-      src: "/web1.png",
+      src: "/web3.png",
       alt: "Portfolio project 3",
-      title: "Deliverize Homepage",
+      title: "House Marketplace",
       key: 3,
+      url: "https://github.com/Thiagomn1/House-Marketplace",
     },
     {
-      src: "/web1.png",
+      src: "/web4.png",
       alt: "Portfolio project 4",
-      title: "Deliverize Homepage",
+      title: "Github Search",
       key: 4,
-    },
-    {
-      src: "/web1.png",
-      alt: "Portfolio project 5",
-      title: "Deliverize Homepage",
-      key: 5,
-    },
-    {
-      src: "/web1.png",
-      alt: "Portfolio project 6",
-      title: "Deliverize Homepage",
-      key: 6,
+      url: "https://github.com/Thiagomn1/Github-Search",
     },
   ];
 
@@ -233,6 +225,7 @@ export default function Home() {
                 title={work.title}
                 src={work.src}
                 alt={work.alt}
+                url={work.url}
               />
             ))}
           </div>

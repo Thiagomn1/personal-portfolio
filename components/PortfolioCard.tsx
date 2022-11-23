@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   title: string;
   src: string;
   alt: string;
+  url: string;
 }
 
 function PortfolioCard(props: Props) {
@@ -20,9 +22,11 @@ function PortfolioCard(props: Props) {
         <span className=" pl-2 text-gray-800 font-medium dark:text-white">
           {props.title}
         </span>
-        <button className=" mr-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 border-none rounded-md ml-8">
-          Repo
-        </button>
+        <Link href={props.url} passHref>
+          <button className=" mr-2 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 border-none rounded-md ml-8">
+            Repo
+          </button>
+        </Link>
       </div>
     </div>
   );
